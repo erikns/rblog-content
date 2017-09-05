@@ -10,4 +10,4 @@ app som fremdeles virker ;)
 Koden ligger forresten på [GitHub](https://github.com/erikns/stt)
 
 ![STT
-Applikasjonen](https://raw.githubusercontent.com/erikns/rblog-content/master/public/stt_app.png)
+Applikasjonen](stt_app.png)
