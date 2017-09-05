@@ -7,7 +7,7 @@ Dette dukker opp litt bugs i løpet av dagen (blant annet et par som omhandlet
 javascripts vide definisjon av `true`). Utfordrende, men dagen ender med en
 app som fremdeles virker ;)
 
-Koden ligger forresten på [GitHub](https://github.com/erikns/stt)
+Koden ligger forresten på [GitHub](https://github.com/erikns/stt).
 
 ![STT
 Applikasjonen](stt_app.png)
