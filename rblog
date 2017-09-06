@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# rblog cli wrapper script
+
+exec node tools/rblog.js $@
