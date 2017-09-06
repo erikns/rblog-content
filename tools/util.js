@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const publicDir = __dirname + '/../public/';
 
 function readDb() {
@@ -23,7 +24,22 @@ function addPost(slug, date) {
     return postFileName;
 }
 
+function checkDb(db) {
+    const errors = [];
+    for (var post of db) {
+        const postFile = publicDir + 'posts/' + post.file + '.md';
+        if (!fs.existsSync(postFile)) {
+            errors.push('Post file ' + path.relative('', postFile) + ' does not exist');
+        }
+    }
+    return {
+        ok: errors.length == 0,
+        errors: errors
+    };
+}
+
 module.exports = {
     readDb: readDb,
-    addPost: addPost
+    addPost: addPost,
+    checkDb, checkDb
 };
