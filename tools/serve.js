@@ -4,10 +4,14 @@ const cors = require('cors');
 
 const app = express();
 
+function random(high, low) {
+    return Math.random() * (high - low) + low;
+}
+
 app.use((req, res, next) => {
     setTimeout(() => {
         next();
-    }, 500);
+    }, random(500, 1500));
 });
 
 app.use(morgan('dev'));
