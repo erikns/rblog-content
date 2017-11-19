@@ -31,6 +31,9 @@ function checkDb(db) {
         if (!fs.existsSync(postFile)) {
             errors.push('Post file ' + path.relative('', postFile) + ' does not exist');
         }
+        if (!/^\d{2}\-\d{2}\-\d{4}$/.test(post.publicationDate)) {
+            errors.push('Date in post ' + post.file + ' has invalid format')
+        }
     }
     return {
         ok: errors.length == 0,
