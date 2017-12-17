@@ -1,4 +1,4 @@
-# Dag 30  - Siste dag i praksis
+# Dag 31  - Siste dag i praksis
 
 Har denne torsdagen logget de siste timene i praksis. Føles litt vemodig, da det har vært svært moro
 og lærerikt å være her!
